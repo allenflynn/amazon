@@ -1,0 +1,99 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f8f8;
+}
+
+/* Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-areas: "header" "main" "footer";
+  height: 100vh;
+}
+header {
+  grid-area: header;
+  background: #203040;
+  align-items: center;
+}
+main {
+  grid-area: main;
+  padding: 4rem;
+}
+footer {
+  grid-area: footer;
+  background: #203040;
+  color: #ffffff;
+  align-items: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.row.center {
+  justify-content: center;
+}
+.col-1 {
+  flex: 1 1 20rem;
+  padding: 2rem 4rem;
+}
+.col-2 {
+  flex: 2 1 40rem;
+  padding: 2rem 4rem;
+}
+/* Common */
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+h2 {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #ff8000;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+li {
+  margin-top: 2rem;
+}
+/* Header */
+header a {
+  color: #ffffff;
+  padding: 1rem;
+}
+/* Card */
+.card {
+  border: 0.1rem #c0c0c0 solid;
+  background: #f8f8f8;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 20px;
+  max-width: 35rem;
+  background: #ffffff;
+}
+.price {
+  font-size: 2rem;
+}
+/* Image */
+img.medium {
+  max-width: 35rem;
+}
+img.large {
+  width: 100%;
+}
