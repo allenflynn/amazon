@@ -7,7 +7,7 @@ import {
 export default function (state = { loading: true, product: {} }, action) {
   switch (action.type) {
     case PRODUCT_DETAIL_REQUEST: {
-      return state;
+      return { loading: true };
     }
     case PRODUCT_DETAIL_SUCCESS: {
       return { loading: false, product: action.payload };
