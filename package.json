@@ -5,8 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "startDev": "nodemon --watch backend backend/server.js",
-    "start": "node backend/server.js"
+    "start": "node backend/server.js & npm start --prefix frontend/"
   },
   "repository": {
     "type": "git",
