@@ -1,7 +1,20 @@
 const data = {
+  users: [
+    {
+      name: "admin",
+      email: "admin@example.com",
+      password: "admin",
+      admin: true,
+    },
+    {
+      name: "Allen",
+      email: "allen@example.com",
+      password: "allen",
+      admin: false,
+    },
+  ],
   products: [
     {
-      _id: 1,
       name:
         "Amazon Essentials Men's Standard Short-Sleeve Heavyweight Workwear Pocket T-Shirt - Black",
       category: "Shirts",
@@ -11,7 +24,6 @@ const data = {
       stock: 0,
     },
     {
-      _id: 2,
       name:
         "Amazon Essentials Men's Standard Short-Sleeve Heavyweight Workwear Pocket T-Shirt - Gold",
       category: "Shirts",
@@ -21,7 +33,6 @@ const data = {
       stock: 1,
     },
     {
-      _id: 3,
       name:
         "Amazon Essentials Men's Standard Short-Sleeve Heavyweight Workwear Pocket T-Shirt - Light Grey Heather",
       category: "Shirts",
@@ -31,7 +42,6 @@ const data = {
       stock: 2,
     },
     {
-      _id: 4,
       name:
         "Amazon Essentials Men's Standard Short-Sleeve Heavyweight Workwear Pocket T-Shirt - Forest Green",
       category: "Shirts",
@@ -41,7 +51,6 @@ const data = {
       stock: 3,
     },
     {
-      _id: 5,
       name:
         "Amazon Essentials Men's Standard Short-Sleeve Heavyweight Workwear Pocket T-Shirt - Navy",
       category: "Shirts",
@@ -51,7 +60,6 @@ const data = {
       stock: 3,
     },
     {
-      _id: 6,
       name:
         "Amazon Essentials Men's Standard Short-Sleeve Heavyweight Workwear Pocket T-Shirt - Red",
       category: "Shirts",
@@ -61,7 +69,6 @@ const data = {
       stock: 2,
     },
     {
-      _id: 7,
       name:
         "Amazon Essentials Men's Standard Short-Sleeve Heavyweight Workwear Pocket T-Shirt - Blue",
       category: "Shirts",
@@ -71,7 +78,6 @@ const data = {
       stock: 1,
     },
     {
-      _id: 8,
       name:
         "Amazon Essentials Men's Standard Short-Sleeve Heavyweight Workwear Pocket T-Shirt - Burgundy",
       category: "Shirts",

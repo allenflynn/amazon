@@ -77,6 +77,33 @@ header a {
   color: #ffffff;
   padding: 1rem;
 }
+.badge {
+  background: #f02020;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 0.2rem 0.6rem;
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+}
+/* Dropdown */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.sign-out {
+  position: absolute;
+  right: 0;
+  background-color: #203040;
+  text-align: center;
+  min-width: 180%;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: none;
+}
+.dropdown:hover .sign-out {
+  display: block;
+}
+
 /* Card */
 .card {
   border: 0.1rem #c0c0c0 solid;
@@ -91,6 +118,9 @@ header a {
   font-size: 2rem;
 }
 /* Image */
+img.small {
+  max-width: 8rem;
+}
 img.medium {
   max-width: 35rem;
 }

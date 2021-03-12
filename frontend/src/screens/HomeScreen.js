@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { listProducts } from "../redux/actions";
+import { getProducts } from "../redux/actions";
 import Product from "../components/Product";
 import Loading from "../components/Loading";
 import Error from "../components/Error";
 import axios from "axios";
 
 const HomeScreen = () => {
-  const dispatch = useDispatch();
-  const stateProducts = useSelector((state) => state.productsState);
+  const stateProducts = useSelector((state) => state.stateProducts);
   const { loading, error, products } = stateProducts;
   // const [products, setProducts] = useState([]);
   // const [loading, setLoading] = useState(false);
   // const [error, setError] = useState(false);
 
+  const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(listProducts());
+    dispatch(getProducts());
     // const fetchData = async () => {
     //   try {
     //     setLoading(true);
@@ -29,6 +29,7 @@ const HomeScreen = () => {
     // };
     // fetchData();
   }, []);
+
   return (
     <div>
       {loading ? (
